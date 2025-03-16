@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonWatcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my website!</h1>
+        <p>Select a page to navigate:</p>
+        <div class="profile-container">
+            <img src="2025-03-16-16-15-31.png" alt="Profile Image" class="profile-image">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#text-section">Text Page</a></li>
+            <li><a href="#buttons-section">Buttons Page</a></li>
+            <li><a href="#website-section">Website Page</a></li>
+        </ul>
+    </nav>
+
+    <section id="text-section">
+        <h2>Text Page</h2>
+        <p class="sample-text">
+            Here is some text for this website. You can <span class="highlight">highlight</span> important parts of the text.
+            You can also add <span class="rgb-lines">RGB lines</span> around specific words or phrases.
+        </p>
+    </section>
+
+    <section id="buttons-section">
+        <h2>links & what I use</h2>
+        <div id="button-container">
+            <!-- Link buttons will be dynamically created by main.js -->
+            <div id="link-button-container"></div>
+            <!-- Non-link buttons will be dynamically created by main.js -->
+            <div id="non-link-button-container"></div>
+        </div>
+    </section>
+
+    <section id="website-section">
+        <h2>Website Page</h2>
+        <p>This is the website page content.</p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

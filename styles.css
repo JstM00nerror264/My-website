@@ -1,0 +1,128 @@
+/* Set the background image for the body */
+body {
+  background: url('2025-03-16-16-07-30.png') no-repeat center center fixed; /* Ensure the path is correct */
+  background-size: cover;
+  color: #fff; /* White text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the button container */
+#button-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for non-link buttons */
+#non-link-button-container {
+  margin-top: 20px; /* Add space between link buttons and non-link buttons */
+}
+
+/* Section styles */
+section {
+  background-color: #000; /* Black background for sections */
+  color: #fff; /* White text color */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  margin-bottom: 20px; /* Add space between sections */
+}
+
+/* Profile image styles */
+.profile-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Link button styles */
+.link-button {
+  background: linear-gradient(90deg, red, yellow, green, cyan, blue, magenta, red); /* RGB gradient background */
+  color: #fff; /* White text color */
+  height: 50px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: animate 5s linear infinite; /* Animate the gradient */
+  transition: transform 0.2s; /* Smooth transition for the raised effect */
+  display: inline-block;
+  text-align: center;
+  line-height: 50px; /* Center text vertically */
+  text-decoration: none; /* Remove underline */
+}
+
+.link-button i {
+  margin-right: 10px;
+  color: black; /* Icon color */
+}
+
+.link-button:hover {
+  background: linear-gradient(90deg, magenta, blue, cyan, green, yellow, red, magenta); /* Reverse RGB gradient on hover */
+  transform: translateY(-5px); /* Raise the button on hover */
+}
+
+.link-button:active {
+  background: linear-gradient(90deg, red, yellow, green, cyan, blue, magenta, red); /* Original RGB gradient on active */
+  opacity: 0.8;
+}
+
+/* Regular button styles */
+button {
+  background: linear-gradient(90deg, red, yellow, green, cyan, blue, magenta, red); /* RGB gradient background */
+  color: #fff; /* White text color */
+  height: 50px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  animation: animate 5s linear infinite; /* Animate the gradient */
+  transition: transform 0.2s; /* Smooth transition for the raised effect */
+  display: inline-block;
+  text-align: center;
+  line-height: 50px; /* Center text vertically */
+}
+
+button i {
+  margin-right: 10px;
+  color: white; /* Icon color */
+}
+
+button:hover {
+  background: linear-gradient(90deg, magenta, blue, cyan, green, yellow, red, magenta); /* Reverse RGB gradient on hover */
+  transform: translateY(-5px); /* Raise the button on hover */
+}
+
+button:active {
+  background: linear-gradient(90deg, red, yellow, green, cyan, blue, magenta, red); /* Original RGB gradient on active */
+  opacity: 0.8;
+}
+
+@keyframes animate {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
